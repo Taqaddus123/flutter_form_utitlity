@@ -137,7 +137,7 @@ class _AuthFormState extends State<AuthForm> {
 
           if (widget.showDateOfBirth)
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
+              padding: const EdgeInsets.only(top: 24),
               child: TextFormField(
                 controller: _dateOfBirthController,
                 decoration: InputDecoration(
@@ -163,7 +163,7 @@ class _AuthFormState extends State<AuthForm> {
             ),
 
           Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.only(top: 24.0),
             child: ElevatedButton(
               onPressed: _submitForm,
               style: ElevatedButton.styleFrom(
@@ -204,7 +204,7 @@ class MyTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
+      padding: const EdgeInsets.only(top: 24),
       child: TextFormField(
         controller: controller,
         obscureText: isPassword && hidePassword,
